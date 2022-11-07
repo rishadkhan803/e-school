@@ -1,0 +1,97 @@
+:root {
+  /* Color */
+  --color-primary: #21b573;
+  --color-bg: #f0fff0;
+  --color-bg-light: #f8fffb;
+  --color-gray: #6c6b6b;
+
+  /* Font */
+  --fs-xxl: clamp(2rem, 10vw, 5rem);
+  --fs-sm: clamp(1.4rem, 10vw, 1.6rem);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+
+  scroll-behavior: smooth;
+}
+
+/* Utilities */
+.container {
+  max-width: 90%;
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.s-heading {
+  font-size: var(--fs-xxl);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  transition: all 1s;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: var(--fs-sm);
+  padding: 1.2rem 2.8rem;
+  border-radius: 3.3rem;
+  cursor: pointer;
+}
+
+/* Section: Header */
+#header {
+  background-color: var(--color-bg);
+}
+
+/* Navigation */
+.navbar {
+  padding: 3rem 0;
+  font-size: var(--fs-sm);
+}
+
+.navbar .navbar-brand {
+  width: 198px;
+  height: 59px;
+}
+
+/* Hero */
+#header .row {
+  padding: 5rem 0;
+}
+
+#header .row .left .query {
+  font-size: var(--fs-sm);
+  color: #fd511a;
+  margin-bottom: 1rem;
+}
+
+#header .row .left .text {
+  font-size: var(--fs-sm);
+  margin: 2rem 0 1.4rem 0;
+}
