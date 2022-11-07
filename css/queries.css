@@ -2,6 +2,10 @@
   .navbar {
     padding: 3rem 0 1rem 0;
   }
+
+  #header .row .right {
+    margin-top: 3rem;
+  }
 }
 
 @media (max-width: 450px) {
