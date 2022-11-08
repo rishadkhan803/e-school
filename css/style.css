@@ -7,6 +7,7 @@
 
   /* Font */
   --fs-xxl: clamp(2rem, 10vw, 5rem);
+  --fs-md: clamp(1.6rem, 10vw, 2.4rem);
   --fs-sm: clamp(1.4rem, 10vw, 1.6rem);
 }
 
@@ -94,4 +95,33 @@ a:hover {
 #header .row .left .text {
   font-size: var(--fs-sm);
   margin: 2rem 0 1.4rem 0;
+}
+
+/* Section: Feature */
+#feature {
+  margin: 4.5rem;
+  font-size: var(--fs-sm);
+}
+
+#feature .column {
+  padding: 5.4rem 6.6rem;
+  border-radius: 1rem;
+  background-color: var(--color-bg-light);
+  transition: all 0.3s;
+}
+
+#feature .column:hover {
+  background: #ffffff;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+#feature .column img {
+  width: 66px;
+  height: 85px;
+}
+
+#feature .column h3 {
+  font-size: var(--fs-md);
+  font-weight: 500;
+  margin-top: 2.2rem;
 }
