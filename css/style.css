@@ -7,6 +7,8 @@
 
   /* Font */
   --fs-xxl: clamp(2rem, 10vw, 5rem);
+  --fs-xl: clamp(1.8rem, 10vw, 3.5rem);
+  --fs-lg: clamp(2rem, 10vw, 2.8rem);
   --fs-md: clamp(1.6rem, 10vw, 2.4rem);
   --fs-sm: clamp(1.4rem, 10vw, 1.6rem);
 }
@@ -41,9 +43,19 @@ body {
   text-align: center;
 }
 
-.s-heading {
+.l-heading {
   font-size: var(--fs-xxl);
   font-weight: 700;
+}
+
+.m-heading {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+}
+
+.s-heading {
+  font-size: var(--fs-lg);
+  font-weight: 500;
 }
 
 a {
@@ -99,7 +111,7 @@ a:hover {
 
 /* Section: Feature */
 #feature {
-  margin: 4.5rem;
+  margin: 5rem 0;
   font-size: var(--fs-sm);
 }
 
@@ -124,4 +136,137 @@ a:hover {
   font-size: var(--fs-md);
   font-weight: 500;
   margin-top: 2.2rem;
+}
+
+/* Section: Course */
+#course {
+  padding: 5rem 0;
+}
+
+#course .card .button {
+  padding: 5px 20px;
+}
+
+#course .card-group {
+  margin-top: 5rem;
+}
+
+#course .card {
+  border: none;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  padding: 2rem;
+  transition: all 0.3s;
+}
+
+#course .card:hover {
+  background-color: var(--color-bg);
+}
+
+#course .card img {
+  width: 100%;
+}
+
+#course .card .card-title {
+  font-size: var(--fs-md);
+  font-weight: 500;
+}
+
+#course .card .card-text {
+  font-size: var(--fs-sm);
+  font-weight: 300;
+  margin: 0.5rem 0 1.4rem 0;
+}
+
+#course .card .card-footer {
+  background-color: #fff;
+  color: #777;
+  border: none;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  transition: all 0.3s;
+}
+
+#course .card:hover .card-footer {
+  background-color: var(--color-bg);
+  color: #222;
+}
+
+#course .card .card-footer .icon {
+  width: 24px;
+  height: 24px;
+}
+
+#course .card .card-footer .info {
+  display: flex;
+  gap: 4px;
+}
+
+/* Section: Testimonial */
+#testimonial {
+  padding: 5rem 0;
+}
+
+#testimonial .carousel-item {
+  padding: 6rem 15rem 0 15rem;
+}
+
+#testimonial .carousel-item .person {
+  width: 15rem;
+  margin-bottom: 2.5rem;
+}
+
+#testimonial .carousel-item .testimony {
+  font-size: var(--fs-sm);
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+/* Section: Footer */
+#footer {
+  padding: 5rem 0 1rem 0;
+  background: #282531;
+  color: #fff;
+}
+
+#footer .container {
+  display: flex;
+  gap: 2rem;
+}
+
+#footer .left {
+  flex: 1;
+}
+
+#footer .right {
+  flex: 2;
+}
+
+#footer .left .text {
+  font-size: var(--fs-sm);
+  font-weight: 300;
+}
+
+#footer .right .title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+#footer .right .link {
+  font-size: var(--fs-sm);
+  color: #909090;
+  margin-top: 1rem;
+}
+
+#footer .right .link:hover {
+  color: #fff;
+}
+
+#footer .copyright {
+  font-size: 1.2rem;
+  margin-top: 4rem;
 }

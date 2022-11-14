@@ -2,6 +2,10 @@
   #feature .column {
     padding: 5rem 3.6rem;
   }
+
+  #course .card .card-footer {
+    display: block;
+  }
 }
 
 @media (max-width: 992px) {
@@ -24,6 +28,37 @@
   #feature .column {
     padding: 5rem;
   }
+
+  #course .card-group {
+    flex-direction: column;
+  }
+
+  #course .card .card-footer {
+    display: flex;
+  }
+
+  #testimonial .carousel-item {
+    padding: 6rem 0 0 0;
+  }
+
+  #footer {
+    padding-top: 2rem;
+  }
+
+  #footer .container {
+    display: block;
+  }
+
+  #footer .left {
+    text-align: center;
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  #footer .left {
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -33,5 +68,23 @@
 
   .navbar-brand {
     max-width: 60%;
+  }
+
+  #course .card .card-footer {
+    display: block;
+  }
+
+  #testimonial .carousel-item .person {
+    width: 10rem;
+  }
+
+  #footer .left {
+    padding: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  #footer .right .col {
+    margin-top: 3.5rem;
   }
 }
